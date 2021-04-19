@@ -21,7 +21,6 @@ $result = mysqli_query($dbc, "SHOW COLUMNS FROM Log");
 $numberOfRows = mysqli_num_rows($result);
 if ($numberOfRows > 0) {
 
-/* By changing Fred below to another specific persons name you can limit access to just the part of the database for that individual. You could eliminate WHERE recorder_id='Fred' all together if you want to give full access to everyone. */
 
 $values = mysqli_query($dbc, "SELECT * FROM Log");
 while ($rowr = mysqli_fetch_row($values)) {
